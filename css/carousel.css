@@ -1,0 +1,194 @@
+@-webkit-keyframes slide-over {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+#carousel {
+  height: 450px;
+  width: 900px;
+  margin: 0px auto;
+  position: relative;
+}
+#carousel .animate {
+  -webkit-animation: animate 1s;
+          animation: animate 1s;
+}
+#carousel .slides {
+  -webkit-animation: slide-over 1s;
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#carousel .slides .slide-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 26px;
+     -moz-column-gap: 26px;
+          column-gap: 26px;
+  height: 100%;
+  width: 100%;
+}
+#carousel .slides .slide-wrapper .slide-img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  max-height: 222px;
+  max-width: 222px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #fff;
+}
+#carousel .slides .hero1 {
+  background-size: 100% auto;
+}
+#carousel .slides .hero2 {
+  background-size: 100% auto;
+}
+#carousel .slides .hero3 {
+  background-size: 100% auto;
+}
+#carousel .hero-nav {
+  color: #000;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#carousel .hero-nav:hover {
+  color: #fff;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+#carousel .prev {
+  left: -50px;
+}
+#carousel .next {
+  right: -50px;
+}
+
+.button-container {
+  margin: 19px auto;
+  text-align: center;
+}
+.button-container .hero-radio-button {
+  background: white;
+  border-top: 1px inset;
+  border-radius: 7.5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 5px;
+  height: 15px;
+  width: 15px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.button-container .hero-radio-button:last-child {
+  margin: 0;
+}
+.button-container .selected {
+  background: black;
+}
+
+.radio-button {
+  cursor: pointer;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+.radio-button .selected {
+  background: url(../images/buttons/selected-radio.png);
+  height: 100%;
+  width: 100%;
+}
+.radio-button .unselected {
+  background: url(../images/buttons/unselected-radio.png);
+  height: 100%;
+  width: 100%;
+}
+
+.button {
+  border-radius: 7px;
+  background: #007ad6;
+  height: 41px;
+  width: 100%;
+  padding: 2px;
+  position: relative;
+}
+.button .glare {
+  border-radius: 7px;
+  background: #40a7f4;
+  height: 20px;
+  width: 100%;
+}
+.button .icon {
+  border-left: 2px solid #83beea;
+  height: 35px;
+  width: 27px;
+  position: absolute;
+  top: 3px;
+  right: 14px;
+}
+.button .icon img {
+  margin: 4px 0 0 3px;
+}
+.button .text {
+  color: white;
+  float: right;
+  font-size: 15px;
+  text-shadow: 0 0 2px black;
+  text-transform: uppercase;
+  position: absolute;
+  margin: 0 auto;
+  top: 15px;
+  left: 12px;
+}
+.button .without-icon {
+  left: 21.5%;
+}
+
+@media (max-width: 768px) {
+  #carousel {
+    height: 300px;
+    width: 600px;
+  }
+}
+@media (max-width: 480px) {
+  #carousel {
+    height: 225px;
+    width: 450px;
+  }
+  .button-container {
+    min-width: 450px;
+  }
+}

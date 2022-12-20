@@ -1,5 +1,8 @@
 // humburger btn
-document.querySelector('.humburger').onclick = function () {
-    this.classList.toggle('active');
-};
+document.querySelector('#btn').addEventListener('click', () => {
+  document.querySelector('.nav-wrapper').classList.add('open');
+}); 
+document.querySelector('#close').addEventListener('click', () => {
+  document.querySelector('.nav-wrapper').classList.remove('open');
+}); 
   // humburger btn end
