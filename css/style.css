@@ -117,6 +117,17 @@ headerlogo {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }
+.main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+  background: url("../assets/img/on.png");
+  background-repeat: no-repeat;
+}
 .main .main-section_text {
   position: relative;
   padding-left: 238px;
