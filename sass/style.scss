@@ -1,0 +1,219 @@
+@import "https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap";
+@font-face {
+    font-family: 'AllRound Book';
+    src: url("../fonts/AllRoundGothic-Book.ttf");
+}
+$primary: #ffbb3d;
+$secondary: #4b4b4b;
+$background-color: #ffbb3d;
+$b-color: #000;
+$w-color: #fff;
+$font-stack: "Lexend", sans-serif;
+$AllRound: "AllRound Book";
+
+:root {
+  --flex-theme: {
+    border: 1px solid var(--theme-dark-blue);
+    font-family: var(--theme-font-family);
+    padding: var(--theme-wide-padding);
+    background-color: var(--theme-light-blue);
+  }
+}
+body {
+  font-family: $font-stack;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+header {
+  .header.container {
+    display: flex;
+    position: absolute;
+    top: 98px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 95.9px;
+    margin: 0 auto;
+    z-index: 3;
+  }
+  &logo {
+    max-width: 100px;
+  }
+}
+
+//   humburger btn
+.humburger {
+  height: 57px;
+  width: 57px;
+  left: 181px;
+  position: relative;
+  .l1 {
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    height: 6px;
+    width: 57px;
+    background-color: $primary;
+    transition: all 0.2s ease-out;
+    top: 0;
+  }
+  .l2 {
+    position: absolute;
+    display: block;
+    margin: auto;
+    top: 12px;
+    left: 0;
+    height: 6px;
+    width: 57px;
+    background-color: $primary;
+    transition: all 0.2s ease-out;
+  }
+  .l3 {
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    height: 6px;
+    width: 57px;
+    background-color: $primary;
+    transition: all 0.2s ease-out;
+    top: 24px;
+  }
+}
+.humburger.active {
+  .l1 {
+    transform: rotate(45deg);
+    top: 48%;
+  }
+  .l2 {
+    opacity: 0;
+  }
+  .l3 {
+    transform: rotate(-45deg);
+    top: 48%;
+  }
+}
+//   humburger btn end
+
+// button
+.main {
+  position: relative;
+  background-image: url("../assets/img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 251.2px;
+  height: 1257px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    z-index: 0;
+  }
+  
+  .main-section_text {
+    position: relative;
+    padding-left: 238px;
+    z-index: 2;
+    .main_title {
+      width: 100%;
+      .white {
+        color: $w-color;
+      }
+      h1 {
+        max-width: 608.8px;
+        font-size: 63px;
+        text-transform: uppercase;
+        font-family: $AllRound;
+        font-weight: normal;
+        position: relative;
+        .dot{
+            bottom: 13.4px;
+            position: absolute;
+            border-radius: 50%;
+            height: 19.5px;
+            width: 19.5px;
+            background-color: #fff;
+
+        }
+      }
+      .subtitle{
+        font-weight: bold;
+      }
+      p{
+        max-width: 661px;
+        padding-left: 8.3px;
+        font-size: 24px;
+        line-height: 30px;
+        line-height: 1.25;
+        font-weight: normal;
+      }
+      .btn-wrapper {
+        margin-top: 9px;
+        .main-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 207px;
+          width: 100%;
+          text-align: center;
+          height: 40px;
+          text-transform: uppercase;
+          border-radius: 33px;
+          font-weight: 800;
+          font-size: 23px;
+          border: 1px solid transparent;
+          background-color: $primary;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .scrl-btn-wrapper{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 103px;
+    height: 174px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 66px;
+    background-color: $b-color;
+    padding: 24px 13px 17px;
+    z-index: 3;
+    .scrl-text-wrapper{
+        p{
+            color: $primary;
+            font-family: $AllRound;
+            font-size: 22px;
+        }
+    }
+    .scrl-arrow-wrapper{
+        margin-top: 7px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        background-color: $background-color;
+        img{
+            width: 24.8px;
+        }
+    }
+  }
+  figure{
+    position: relative;
+    margin-top: 92.9px;
+    z-index: 3;
+  }
+}
