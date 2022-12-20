@@ -32,6 +32,20 @@ body {
 section{
   background-color: $primary;
 }
+.sub-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $b-color;
+  color: $primary;
+  text-transform: uppercase;
+  padding: 3px 20px;
+  font-weight: 500;
+  height: 33px;
+  margin-top: 10px;
+  border-radius: 17px;
+  font-size: 20px;
+}
 header {
   .header.container {
     display: flex;

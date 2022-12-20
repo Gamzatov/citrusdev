@@ -30,6 +30,27 @@ section {
   background-color: #ffbb3d;
 }
 
+.sub-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  color: #ffbb3d;
+  text-transform: uppercase;
+  padding: 3px 20px;
+  font-weight: 500;
+  height: 33px;
+  margin-top: 10px;
+  border-radius: 17px;
+  font-size: 20px;
+}
+
 header .header.container {
   display: -webkit-box;
   display: -ms-flexbox;
