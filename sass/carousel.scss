@@ -17,7 +17,11 @@
     .button-container{
         position: absolute;
         bottom: 30.5px;
-        right: 0;
+        right: -67px;
+		@media(max-width:1600px){
+			bottom: 110px;
+			right: 104px;
+		}
     }
 	.slides {
 		-webkit-animation: slide-over 1s;
@@ -35,15 +39,21 @@
 			width: 100%;
             .slide-text-wrapper{
                 max-width: 600px;
-            
                 .slide-title{
                     font-size: 2.5em;
                     text-transform: uppercase;
                     font-weight: bold;
                     margin-bottom: 4px;
+					@media(max-width:1600px){
+						font-size: 2rem;
+					}
                 }
+				
                 p{
                     font-size: 24px;
+					@media(max-width:1600px){
+						font-size: 20px;
+					}
                 }
                
             }
@@ -58,16 +68,11 @@
                 height: 100%;
                 border-radius: 50%;
                 background: #fff;
+				@media(max-width:1600px){
+					max-width:180px;
+					max-height:180px;
+				  }
             }
-		}
-		.hero1 {
-			background-size: 100% auto;
-		}
-		.hero2 {
-			background-size: 100% auto;
-		}
-		.hero3 {
-			background-size: 100% auto;
 		}
 	}
 	.hero-nav {
@@ -97,7 +102,7 @@
 	}
 }
 .button-container {
-	margin: 19px auto;
+	margin: 0px auto;
 	text-align: center;
 	.hero-radio-button {
 		border-radius: 50%;
@@ -117,6 +122,11 @@
 		user-select: none;
 		&:last-child {
 			margin: 0;
+		}
+		@media(max-width:1600px){
+			height: 50px;
+			width: 50px;
+			background-size: 30px;
 		}
 	}
     .hero-radio-button.diagnosis{
@@ -138,12 +148,10 @@
 	height: 15px;
 	width: 15px;
 	.selected {
-		background: url(../images/buttons/selected-radio.png);
 		height: 100%;
 		width: 100%;
 	}
 	.unselected {
-		background: url(../images/buttons/unselected-radio.png);
 		height: 100%;
 		width: 100%;
 	}
@@ -205,6 +213,6 @@
 		width: 450px;
 	}
 	.button-container {
-		min-width: 450px;
+		// min-width: 450px;
 	}
 }

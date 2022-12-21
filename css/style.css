@@ -25,6 +25,11 @@ body {
   max-width: 1032px;
   margin: 0 auto;
 }
+@media (max-width: 1600px) {
+  .small-container {
+    max-width: 800px;
+  }
+}
 
 section {
   background-color: #ffbb3d;
@@ -50,6 +55,12 @@ section {
   border-radius: 17px;
   font-size: 20px;
 }
+@media (max-width: 1600px) {
+  .sub-btn {
+    font-size: 15px;
+    height: 30px;
+  }
+}
 
 header .header.container {
   display: -webkit-box;
@@ -68,8 +79,18 @@ header .header.container {
   margin: 0 auto;
   z-index: 3;
 }
-headerlogo {
-  max-width: 100px;
+@media (max-width: 1600px) {
+  header .header.container {
+    top: 65px;
+  }
+}
+header .logo {
+  max-width: 190px;
+}
+@media (max-width: 1600px) {
+  header .logo {
+    max-width: 150px;
+  }
 }
 
 nav .nav-wrapper {
@@ -108,8 +129,16 @@ nav .nav-wrapper .nav-links .link a::hover {
   height: 57px;
   width: 57px;
   left: 181px;
+  top: 0px;
   cursor: pointer;
   position: relative;
+}
+@media (max-width: 1600px) {
+  .humburger {
+    left: 144px;
+    height: 40px;
+    width: 40px;
+  }
 }
 .humburger .l1 {
   position: absolute;
@@ -123,6 +152,12 @@ nav .nav-wrapper .nav-links .link a::hover {
   transition: all 0.2s ease-out;
   top: 0;
 }
+@media (max-width: 1600px) {
+  .humburger .l1 {
+    width: 47px;
+    height: 5px;
+  }
+}
 .humburger .l2 {
   position: absolute;
   display: block;
@@ -135,6 +170,13 @@ nav .nav-wrapper .nav-links .link a::hover {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+@media (max-width: 1600px) {
+  .humburger .l2 {
+    width: 47px;
+    height: 5px;
+    top: 10px;
+  }
+}
 .humburger .l3 {
   position: absolute;
   display: block;
@@ -146,6 +188,13 @@ nav .nav-wrapper .nav-links .link a::hover {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   top: 24px;
+}
+@media (max-width: 1600px) {
+  .humburger .l3 {
+    width: 47px;
+    height: 5px;
+    top: 20px;
+  }
 }
 
 .humburger.close {
@@ -164,6 +213,11 @@ nav .nav-wrapper .nav-links .link a::hover {
   background-repeat: no-repeat;
   padding-top: 251.2px;
   max-height: 1257px;
+}
+@media (max-width: 1600px) {
+  .main {
+    padding-top: 200px;
+  }
 }
 .main::before {
   content: "";
@@ -184,16 +238,30 @@ nav .nav-wrapper .nav-links .link a::hover {
   height: 100%;
   background: url("../assets/img/on.png");
   background-repeat: no-repeat;
+  background-position: 0% 96.5%;
+}
+@media (max-width: 1600px) {
+  .main::after {
+    background-size: 64vw;
+    background-position: 0px 40%;
+  }
 }
 @media (max-width: 1240px) {
   .main::after {
-    width: 30vw;
+    width: 50vw;
+    background-size: 50vw;
+    background-position: 77px 50%;
   }
 }
 .main .main-section_text {
   position: relative;
   padding-left: 238px;
   z-index: 2;
+}
+@media (max-width: 1600px) {
+  .main .main-section_text {
+    padding-left: 190px;
+  }
 }
 .main .main-section_text .main_title {
   width: 100%;
@@ -203,11 +271,18 @@ nav .nav-wrapper .nav-links .link a::hover {
 }
 .main .main-section_text .main_title h1 {
   max-width: 608.8px;
-  font-size: 3.24vw;
+  font-size: 63px;
   text-transform: uppercase;
   font-family: "AllRound Book";
   font-weight: normal;
   position: relative;
+}
+@media (max-width: 1600px) {
+  .main .main-section_text .main_title h1 {
+    font-size: 3.2em;
+    max-width: 557.8px;
+    line-height: 50px;
+  }
 }
 .main .main-section_text .main_title h1 .dot {
   bottom: 13.4px;
@@ -216,6 +291,13 @@ nav .nav-wrapper .nav-links .link a::hover {
   height: 19.5px;
   width: 19.5px;
   background-color: #fff;
+}
+@media (max-width: 1600px) {
+  .main .main-section_text .main_title h1 .dot {
+    bottom: 5px;
+    height: 14px;
+    width: 14px;
+  }
 }
 .main .main-section_text .main_title .subtitle {
   font-weight: bold;
@@ -227,6 +309,12 @@ nav .nav-wrapper .nav-links .link a::hover {
   line-height: 30px;
   line-height: 1.25;
   font-weight: normal;
+}
+@media (max-width: 1600px) {
+  .main .main-section_text .main_title p {
+    max-width: 521px;
+    font-size: 19px;
+  }
 }
 .main .main-section_text .main_title .btn-wrapper {
   margin-top: 9px;
@@ -253,10 +341,17 @@ nav .nav-wrapper .nav-links .link a::hover {
   background-color: #ffbb3d;
   cursor: pointer;
 }
+@media (max-width: 1600px) {
+  .main .main-section_text .main_title .btn-wrapper .main-btn {
+    font-size: 18px;
+    height: 34px;
+    max-width: 173px;
+  }
+}
 .main .scrl-btn-wrapper {
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 36%;
   width: 103px;
   height: 174px;
   -webkit-transform: translate(-50%, -50%);
@@ -277,10 +372,23 @@ nav .nav-wrapper .nav-links .link a::hover {
   padding: 24px 13px 17px;
   z-index: 3;
 }
+@media (max-width: 1600px) {
+  .main .scrl-btn-wrapper {
+    padding: 22px 12px 17px;
+    width: 83px;
+    height: 134px;
+  }
+}
 .main .scrl-btn-wrapper .scrl-text-wrapper p {
   color: #ffbb3d;
   font-family: "AllRound Book";
   font-size: 22px;
+}
+@media (max-width: 1600px) {
+  .main .scrl-btn-wrapper .scrl-text-wrapper p {
+    font-size: 18px;
+    line-height: 16px;
+  }
 }
 .main .scrl-btn-wrapper .scrl-arrow-wrapper {
   margin-top: 7px;
@@ -295,13 +403,29 @@ nav .nav-wrapper .nav-links .link a::hover {
           justify-content: center;
   background-color: #ffbb3d;
 }
+@media (max-width: 1600px) {
+  .main .scrl-btn-wrapper .scrl-arrow-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+}
 .main .scrl-btn-wrapper .scrl-arrow-wrapper img {
   width: 24.8px;
+}
+@media (max-width: 1600px) {
+  .main .scrl-btn-wrapper .scrl-arrow-wrapper img {
+    width: 18.4px;
+  }
 }
 .main figure {
   position: relative;
   margin-top: 92.9px;
   z-index: 3;
+}
+@media (max-width: 1600px) {
+  .main figure {
+    margin-top: 82.9px;
+  }
 }
 
 .jobs.primary-back {

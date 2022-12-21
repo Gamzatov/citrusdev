@@ -28,6 +28,9 @@ body {
 .small-container {
   max-width: 1032px;
   margin: 0 auto;
+  @media(max-width:1600px){
+    max-width: 800px;
+  }
 }
 section{
   background-color: $primary;
@@ -45,6 +48,10 @@ section{
   margin-top: 10px;
   border-radius: 17px;
   font-size: 20px;
+  @media(max-width:1600px){
+    font-size: 15px;
+    height: 30px;
+  }
 }
 header {
   .header.container {
@@ -58,9 +65,15 @@ header {
     padding-right: 95.9px;
     margin: 0 auto;
     z-index: 3;
+    @media(max-width:1600px){
+      top: 65px;
+    }
   }
-  &logo {
-    max-width: 100px;
+  .logo {
+    max-width: 190px;
+    @media(max-width:1600px){
+      max-width: 150px;
+    }
   }
 }
 
@@ -104,6 +117,12 @@ nav {
   height: 57px;
   width: 57px;
   left: 181px;
+  top: 0px;
+  @media(max-width:1600px){
+    left: 144px;
+    height: 40px;
+    width: 40px;
+  }
   cursor: pointer;
   position: relative;
   .l1 {
@@ -116,6 +135,10 @@ nav {
     background-color: $primary;
     transition: all 0.2s ease-out;
     top: 0;
+    @media(max-width:1600px){
+      width: 47px;
+      height: 5px;
+    }
   }
   .l2 {
     position: absolute;
@@ -127,6 +150,12 @@ nav {
     width: 57px;
     background-color: $primary;
     transition: all 0.2s ease-out;
+    @media(max-width:1600px){
+      width: 47px;
+      height: 5px;
+      top: 10px;
+    }
+
   }
   .l3 {
     position: absolute;
@@ -138,6 +167,11 @@ nav {
     background-color: $primary;
     transition: all 0.2s ease-out;
     top: 24px;
+    @media(max-width:1600px){
+      width: 47px;
+      height: 5px;
+      top: 20px;
+    }
   }
 }
 .humburger.close {
@@ -158,6 +192,9 @@ nav {
   background-repeat: no-repeat;
   padding-top: 251.2px;
   max-height: 1257px;
+  @media(max-width:1600px){
+    padding-top: 200px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -177,8 +214,15 @@ nav {
     height: 100%;
     background: url("../assets/img/on.png");
     background-repeat: no-repeat;
+    background-position: 0% 96.5%;
+    @media(max-width:1600px){
+      background-size: 64vw;
+      background-position:0px 40%;
+    }
     @media (max-width: 1240px) {
-      width: 30vw;
+      width: 50vw;
+      background-size: 50vw;
+      background-position:77px 50%;
     }
   }
 
@@ -186,6 +230,9 @@ nav {
     position: relative;
     padding-left: 238px;
     z-index: 2;
+    @media(max-width:1600px){
+      padding-left: 190px;
+    }
     .main_title {
       width: 100%;
       .white {
@@ -193,11 +240,16 @@ nav {
       }
       h1 {
         max-width: 608.8px;
-        font-size: 3.24vw;
+        font-size: 63px;
         text-transform: uppercase;
         font-family: $AllRound;
         font-weight: normal;
         position: relative;
+        @media(max-width:1600px){
+          font-size: 3.2em;
+          max-width: 557.8px;
+          line-height: 50px;
+        }
         .dot {
           bottom: 13.4px;
           position: absolute;
@@ -205,6 +257,11 @@ nav {
           height: 19.5px;
           width: 19.5px;
           background-color: #fff;
+          @media(max-width:1600px){
+            bottom: 5px;
+            height: 14px;
+            width: 14px;
+          }
         }
       }
       .subtitle {
@@ -214,6 +271,10 @@ nav {
         max-width: 661px;
         padding-left: 8.3px;
         font-size: 24px;
+        @media(max-width: 1600px){
+          max-width: 521px;
+          font-size: 19px;
+        }
         line-height: 30px;
         line-height: 1.25;
         font-weight: normal;
@@ -235,6 +296,11 @@ nav {
           border: 1px solid transparent;
           background-color: $primary;
           cursor: pointer;
+          @media(max-width:1600px){
+            font-size: 18px;
+            height: 34px;
+            max-width: 173px;
+          }
         }
       }
     }
@@ -242,7 +308,7 @@ nav {
   .scrl-btn-wrapper {
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 36%;
     width: 103px;
     height: 174px;
     transform: translate(-50%, -50%);
@@ -254,11 +320,20 @@ nav {
     background-color: $b-color;
     padding: 24px 13px 17px;
     z-index: 3;
+    @media(max-width:1600px){
+      padding: 22px 12px 17px;
+      width: 83px;
+      height: 134px;
+    }
     .scrl-text-wrapper {
       p {
         color: $primary;
         font-family: $AllRound;
         font-size: 22px;
+        @media(max-width:1600px){
+          font-size: 18px;
+          line-height: 16px;
+        }
       }
     }
     .scrl-arrow-wrapper {
@@ -269,8 +344,15 @@ nav {
       display: flex;
       justify-content: center;
       background-color: $primary;
+      @media(max-width:1600px){
+        width: 60px;
+        height: 60px;
+      }
       img {
         width: 24.8px;
+        @media(max-width:1600px){
+          width: 18.4px;
+        }
       }
     }
   }
@@ -278,6 +360,10 @@ nav {
     position: relative;
     margin-top: 92.9px;
     z-index: 3;
+    @media(max-width:1600px){
+      margin-top: 82.9px;
+    }
+    
   }
 }
 
