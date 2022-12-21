@@ -17,6 +17,9 @@
 	@media(max-width:850px){
 		width: 650px;
 	}
+	@media(max-width:650px){
+		max-width: 601px;
+	}
 	@media(max-width:600px){
 		width: 450px;
 	}
@@ -137,13 +140,13 @@
 	}
 	.prev {
 		left: -50px;
-		@media(max-width:400px){
+		@media(max-width:500px){
 			left: -30px;
 		}
 	}
 	.next {
 		right: -50px;
-		@media(max-width:400px){
+		@media(max-width:500px){
 			right: -3px;
 		}
 	}

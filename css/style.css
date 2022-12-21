@@ -126,6 +126,12 @@ nav .nav-wrapper {
   padding: 207px 237px;
   z-index: 5;
   min-height: 100vh;
+  overflow-y: scroll;
+}
+@media (max-width: 1200px) {
+  nav .nav-wrapper {
+    padding: 100px;
+  }
 }
 nav .nav-wrapper .nav-links .link a {
   display: block;
@@ -138,6 +144,11 @@ nav .nav-wrapper .nav-links .link a {
 }
 nav .nav-wrapper .nav-links .link a::hover {
   color: #ffbb3d;
+}
+@media (max-width: 900px) {
+  nav .nav-wrapper .nav-links .link a {
+    font-size: 1.5rem;
+  }
 }
 
 .nav-wrapper.open {
@@ -236,6 +247,11 @@ nav .nav-wrapper .nav-links .link a::hover {
   z-index: 999 !important;
   width: 36px;
 }
+@media (max-width: 600px) {
+  .humburger.close img {
+    width: 57px;
+  }
+}
 
 .main {
   position: relative;
@@ -316,10 +332,18 @@ nav .nav-wrapper .nav-links .link a::hover {
   .main .main-section_text {
     padding-left: 74px;
   }
+
+}
+@media (max-width:600px) {
+  .main .main-section_text {
+    padding-left: 0;
+    padding: 25px;
+  }
 }
 @media (max-width: 400px) {
   .main .main-section_text {
     padding: 25px;
+    padding-left: 0px;
   }
 }
 .main .main-section_text .main_title {

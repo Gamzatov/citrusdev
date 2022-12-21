@@ -21,6 +21,11 @@
     width: 650px;
   }
 }
+@media (max-width: 650px) {
+  #carousel {
+    max-width: 601px;
+  }
+}
 @media (max-width: 600px) {
   #carousel {
     width: 450px;
@@ -190,7 +195,7 @@
 #carousel .prev {
   left: -50px;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #carousel .prev {
     left: -30px;
   }
@@ -198,7 +203,7 @@
 #carousel .next {
   right: -50px;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   #carousel .next {
     right: -3px;
   }
