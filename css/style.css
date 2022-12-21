@@ -100,6 +100,11 @@ header .header.container {
     padding-right: 53.5px;
   }
 }
+@media (max-width: 400px) {
+  header .header.container {
+    padding: 0 25px;
+  }
+}
 header .logo {
   max-width: 190px;
 }
@@ -159,6 +164,11 @@ nav .nav-wrapper .nav-links .link a::hover {
 @media (max-width: 1160px) {
   .humburger {
     left: 74px;
+  }
+}
+@media (max-width: 400px) {
+  .humburger {
+    left: 0;
   }
 }
 .humburger .l1 {
@@ -305,6 +315,11 @@ nav .nav-wrapper .nav-links .link a::hover {
 @media (max-width: 1160px) {
   .main .main-section_text {
     padding-left: 74px;
+  }
+}
+@media (max-width: 400px) {
+  .main .main-section_text {
+    padding: 25px;
   }
 }
 .main .main-section_text .main_title {
@@ -516,6 +531,27 @@ nav .nav-wrapper .nav-links .link a::hover {
             column-gap: 24px;
   }
 }
+@media (max-width: 600px) {
+  .jobs.primary-back .circles-wrapper {
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+}
+@media (max-width: 400px) {
+  .jobs.primary-back .circles-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .jobs.primary-back .circles-wrapper .circle-item .circle {
+    margin: 0 auto !important;
+  }
+}
 .jobs.primary-back .circles-wrapper .circle-item .circle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,6 +584,17 @@ nav .nav-wrapper .nav-links .link a::hover {
     height: 130px;
   }
 }
+@media (max-width: 600px) {
+  .jobs.primary-back .circles-wrapper .circle-item .circle {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (max-width: 400px) {
+  .jobs.primary-back .circles-wrapper .circle-item .circle .circle {
+    margin: 0 auto !important;
+  }
+}
 .jobs.primary-back .circles-wrapper .circle-item .circle .circle-text {
   font-size: 2em;
   font-weight: bold;
@@ -557,6 +604,12 @@ nav .nav-wrapper .nav-links .link a::hover {
 @media (max-width: 900px) {
   .jobs.primary-back .circles-wrapper .circle-item .circle .circle-text {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .jobs.primary-back .circles-wrapper .circle-item .circle .circle-text {
+    font-size: 16px;
+    max-width: 50px;
   }
 }
 .jobs.primary-back .circles-wrapper .circle-item .circle-title {

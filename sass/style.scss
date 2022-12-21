@@ -78,6 +78,9 @@ header {
     @media(max-width:900px){
       padding-right: 53.5px;
     }
+    @media(max-width:400px){
+      padding: 0 25px;
+    }
   }
   .logo {
     max-width: 190px;
@@ -135,6 +138,9 @@ nav {
   }
   @media (max-width: 1160px) {
     left: 74px;
+  }
+  @media(max-width:400px){
+    left: 0;
   }
   cursor: pointer;
   position: relative;
@@ -258,6 +264,9 @@ nav {
     }
     @media (max-width: 1160px) {
       padding-left: 74px;
+    }
+    @media(max-width:400px){
+      padding: 25px;
     }
     .main_title {
       width: 100%;
@@ -417,7 +426,20 @@ nav {
     @media (max-width: 900px) {
       column-gap: 24px;
     }
+    @media(max-width:600px){
+      column-gap: 0;
+    }
+    @media(max-width:400px){
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 auto;
+    }
     .circle-item {
+      .circle{
+        @media(max-width:400px){
+          margin: 0 auto !important;
+        }
+      }
       .circle {
         display: flex;
         width: 11.615vw;
@@ -437,6 +459,17 @@ nav {
           width: 130px;
           height: 130px;
         }
+        @media(max-width: 600px){
+          width: 90px;
+          height: 90px;
+          
+        }
+        .circle{
+          @media(max-width:400px){
+            margin: 0 auto !important;
+          }
+        }
+        
         .circle-text {
           font-size: 2em;
           font-weight: bold;
@@ -444,6 +477,10 @@ nav {
           margin: 0 auto;
           @media (max-width: 900px) {
             font-size: 1.5rem;
+          }
+          @media(max-width:600px){
+            font-size: 16px;
+            max-width: 50px;
           }
         }
       }
