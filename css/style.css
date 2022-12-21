@@ -177,6 +177,11 @@ nav .nav-wrapper .nav-links .link a::hover {
     left: 74px;
   }
 }
+@media (max-width: 650px) {
+  .humburger {
+    left: 25px;
+  }
+}
 @media (max-width: 400px) {
   .humburger {
     left: 0;
@@ -332,18 +337,10 @@ nav .nav-wrapper .nav-links .link a::hover {
   .main .main-section_text {
     padding-left: 74px;
   }
-
 }
-@media (max-width:600px) {
-  .main .main-section_text {
-    padding-left: 0;
-    padding: 25px;
-  }
-}
-@media (max-width: 400px) {
+@media (max-width: 650px) {
   .main .main-section_text {
     padding: 25px;
-    padding-left: 0px;
   }
 }
 .main .main-section_text .main_title {
