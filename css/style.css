@@ -30,6 +30,17 @@ body {
     max-width: 800px;
   }
 }
+@media (max-width: 1000px) {
+  .small-container {
+    max-width: 100%;
+    padding: 0 74px;
+  }
+}
+@media (max-width: 900px) {
+  .small-container {
+    padding: 0 25px;
+  }
+}
 
 section {
   background-color: #ffbb3d;
@@ -82,6 +93,11 @@ header .header.container {
 @media (max-width: 1600px) {
   header .header.container {
     top: 65px;
+  }
+}
+@media (max-width: 900px) {
+  header .header.container {
+    padding-right: 53.5px;
   }
 }
 header .logo {
@@ -138,6 +154,11 @@ nav .nav-wrapper .nav-links .link a::hover {
     left: 144px;
     height: 40px;
     width: 40px;
+  }
+}
+@media (max-width: 1160px) {
+  .humburger {
+    left: 74px;
   }
 }
 .humburger .l1 {
@@ -219,6 +240,11 @@ nav .nav-wrapper .nav-links .link a::hover {
     padding-top: 200px;
   }
 }
+@media (max-width: 900px) {
+  .main {
+    padding-top: 125px;
+  }
+}
 .main::before {
   content: "";
   position: absolute;
@@ -253,6 +279,19 @@ nav .nav-wrapper .nav-links .link a::hover {
     background-position: 77px 50%;
   }
 }
+@media (max-width: 1000px) {
+  .main::after {
+    background-position: 39px 90%;
+  }
+}
+@media (max-width: 900px) {
+  .main::after {
+    background: url("../assets/img/on-mobile.png");
+    background-position: 0% 100%;
+    background-size: 57vw;
+    background-repeat: no-repeat;
+  }
+}
 .main .main-section_text {
   position: relative;
   padding-left: 238px;
@@ -261,6 +300,11 @@ nav .nav-wrapper .nav-links .link a::hover {
 @media (max-width: 1600px) {
   .main .main-section_text {
     padding-left: 190px;
+  }
+}
+@media (max-width: 1160px) {
+  .main .main-section_text {
+    padding-left: 74px;
   }
 }
 .main .main-section_text .main_title {
@@ -284,6 +328,13 @@ nav .nav-wrapper .nav-links .link a::hover {
     line-height: 50px;
   }
 }
+@media (max-width: 900px) {
+  .main .main-section_text .main_title h1 {
+    font-size: 39px;
+    max-width: 400px;
+    line-height: 40px;
+  }
+}
 .main .main-section_text .main_title h1 .dot {
   bottom: 13.4px;
   position: absolute;
@@ -302,6 +353,11 @@ nav .nav-wrapper .nav-links .link a::hover {
 .main .main-section_text .main_title .subtitle {
   font-weight: bold;
 }
+@media (max-width: 900px) {
+  .main .main-section_text .main_title .subtitle {
+    margin-top: 13.6px;
+  }
+}
 .main .main-section_text .main_title p {
   max-width: 661px;
   padding-left: 8.3px;
@@ -314,6 +370,11 @@ nav .nav-wrapper .nav-links .link a::hover {
   .main .main-section_text .main_title p {
     max-width: 521px;
     font-size: 19px;
+  }
+}
+@media (max-width: 900px) {
+  .main .main-section_text .main_title p {
+    max-width: 441px;
   }
 }
 .main .main-section_text .main_title .btn-wrapper {
@@ -377,6 +438,11 @@ nav .nav-wrapper .nav-links .link a::hover {
     padding: 22px 12px 17px;
     width: 83px;
     height: 134px;
+  }
+}
+@media (max-width: 900px) {
+  .main .scrl-btn-wrapper {
+    display: none;
   }
 }
 .main .scrl-btn-wrapper .scrl-text-wrapper p {
@@ -443,6 +509,13 @@ nav .nav-wrapper .nav-links .link a::hover {
      -moz-column-gap: 48px;
           column-gap: 48px;
 }
+@media (max-width: 900px) {
+  .jobs.primary-back .circles-wrapper {
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
+  }
+}
 .jobs.primary-back .circles-wrapper .circle-item .circle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,11 +536,28 @@ nav .nav-wrapper .nav-links .link a::hover {
   border: 10px solid #000;
   border-radius: 50%;
 }
+@media (max-width: 1240px) {
+  .jobs.primary-back .circles-wrapper .circle-item .circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 900px) {
+  .jobs.primary-back .circles-wrapper .circle-item .circle {
+    width: 130px;
+    height: 130px;
+  }
+}
 .jobs.primary-back .circles-wrapper .circle-item .circle .circle-text {
   font-size: 2em;
   font-weight: bold;
   max-width: 153px;
   margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .jobs.primary-back .circles-wrapper .circle-item .circle .circle-text {
+    font-size: 1.5rem;
+  }
 }
 .jobs.primary-back .circles-wrapper .circle-item .circle-title {
   max-width: 110px;

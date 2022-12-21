@@ -28,14 +28,21 @@ body {
 .small-container {
   max-width: 1032px;
   margin: 0 auto;
-  @media(max-width:1600px){
+  @media (max-width: 1600px) {
     max-width: 800px;
   }
+  @media (max-width: 1000px) {
+    max-width: 100%;
+    padding: 0 74px;
+  }
+  @media(max-width:900px){
+    padding:0 25px;
+  }
 }
-section{
+section {
   background-color: $primary;
 }
-.sub-btn{
+.sub-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +55,7 @@ section{
   margin-top: 10px;
   border-radius: 17px;
   font-size: 20px;
-  @media(max-width:1600px){
+  @media (max-width: 1600px) {
     font-size: 15px;
     height: 30px;
   }
@@ -65,13 +72,16 @@ header {
     padding-right: 95.9px;
     margin: 0 auto;
     z-index: 3;
-    @media(max-width:1600px){
+    @media (max-width: 1600px) {
       top: 65px;
+    }
+    @media(max-width:900px){
+      padding-right: 53.5px;
     }
   }
   .logo {
     max-width: 190px;
-    @media(max-width:1600px){
+    @media (max-width: 1600px) {
       max-width: 150px;
     }
   }
@@ -80,7 +90,7 @@ header {
 // navigation
 nav {
   .nav-wrapper {
-    transition: .4s;
+    transition: 0.4s;
     position: fixed;
     top: -9000px;
     left: 0;
@@ -107,9 +117,9 @@ nav {
     }
   }
 }
-.nav-wrapper.open{
+.nav-wrapper.open {
   top: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 // navigation  end
 //   humburger btn
@@ -118,10 +128,13 @@ nav {
   width: 57px;
   left: 181px;
   top: 0px;
-  @media(max-width:1600px){
+  @media (max-width: 1600px) {
     left: 144px;
     height: 40px;
     width: 40px;
+  }
+  @media (max-width: 1160px) {
+    left: 74px;
   }
   cursor: pointer;
   position: relative;
@@ -135,7 +148,7 @@ nav {
     background-color: $primary;
     transition: all 0.2s ease-out;
     top: 0;
-    @media(max-width:1600px){
+    @media (max-width: 1600px) {
       width: 47px;
       height: 5px;
     }
@@ -150,12 +163,11 @@ nav {
     width: 57px;
     background-color: $primary;
     transition: all 0.2s ease-out;
-    @media(max-width:1600px){
+    @media (max-width: 1600px) {
       width: 47px;
       height: 5px;
       top: 10px;
     }
-
   }
   .l3 {
     position: absolute;
@@ -167,7 +179,7 @@ nav {
     background-color: $primary;
     transition: all 0.2s ease-out;
     top: 24px;
-    @media(max-width:1600px){
+    @media (max-width: 1600px) {
       width: 47px;
       height: 5px;
       top: 20px;
@@ -192,8 +204,11 @@ nav {
   background-repeat: no-repeat;
   padding-top: 251.2px;
   max-height: 1257px;
-  @media(max-width:1600px){
+  @media (max-width: 1600px) {
     padding-top: 200px;
+  }
+  @media (max-width: 900px) {
+    padding-top: 125px;
   }
   &::before {
     content: "";
@@ -215,23 +230,34 @@ nav {
     background: url("../assets/img/on.png");
     background-repeat: no-repeat;
     background-position: 0% 96.5%;
-    @media(max-width:1600px){
+    @media (max-width: 1600px) {
       background-size: 64vw;
-      background-position:0px 40%;
+      background-position: 0px 40%;
     }
     @media (max-width: 1240px) {
       width: 50vw;
       background-size: 50vw;
-      background-position:77px 50%;
+      background-position: 77px 50%;
+    }
+    @media (max-width: 1000px) {
+      background-position: 39px 90%;
+    }
+    @media (max-width: 900px) {
+      background: url("../assets/img/on-mobile.png");
+      background-position: 0% 100%;
+      background-size: 57vw;
+      background-repeat: no-repeat;
     }
   }
-
   .main-section_text {
     position: relative;
     padding-left: 238px;
     z-index: 2;
-    @media(max-width:1600px){
+    @media (max-width: 1600px) {
       padding-left: 190px;
+    }
+    @media (max-width: 1160px) {
+      padding-left: 74px;
     }
     .main_title {
       width: 100%;
@@ -245,10 +271,15 @@ nav {
         font-family: $AllRound;
         font-weight: normal;
         position: relative;
-        @media(max-width:1600px){
+        @media (max-width: 1600px) {
           font-size: 3.2em;
           max-width: 557.8px;
           line-height: 50px;
+        }
+        @media (max-width: 900px) {
+          font-size: 39px;
+          max-width: 400px;
+          line-height: 40px;
         }
         .dot {
           bottom: 13.4px;
@@ -257,7 +288,7 @@ nav {
           height: 19.5px;
           width: 19.5px;
           background-color: #fff;
-          @media(max-width:1600px){
+          @media (max-width: 1600px) {
             bottom: 5px;
             height: 14px;
             width: 14px;
@@ -266,14 +297,20 @@ nav {
       }
       .subtitle {
         font-weight: bold;
+        @media (max-width: 900px) {
+          margin-top: 13.6px;
+        }
       }
       p {
         max-width: 661px;
         padding-left: 8.3px;
         font-size: 24px;
-        @media(max-width: 1600px){
+        @media (max-width: 1600px) {
           max-width: 521px;
           font-size: 19px;
+        }
+        @media (max-width: 900px) {
+          max-width: 441px;
         }
         line-height: 30px;
         line-height: 1.25;
@@ -296,7 +333,7 @@ nav {
           border: 1px solid transparent;
           background-color: $primary;
           cursor: pointer;
-          @media(max-width:1600px){
+          @media (max-width: 1600px) {
             font-size: 18px;
             height: 34px;
             max-width: 173px;
@@ -320,17 +357,20 @@ nav {
     background-color: $b-color;
     padding: 24px 13px 17px;
     z-index: 3;
-    @media(max-width:1600px){
+    @media (max-width: 1600px) {
       padding: 22px 12px 17px;
       width: 83px;
       height: 134px;
+    }
+    @media(max-width:900px){
+      display: none;
     }
     .scrl-text-wrapper {
       p {
         color: $primary;
         font-family: $AllRound;
         font-size: 22px;
-        @media(max-width:1600px){
+        @media (max-width: 1600px) {
           font-size: 18px;
           line-height: 16px;
         }
@@ -344,13 +384,13 @@ nav {
       display: flex;
       justify-content: center;
       background-color: $primary;
-      @media(max-width:1600px){
+      @media (max-width: 1600px) {
         width: 60px;
         height: 60px;
       }
       img {
         width: 24.8px;
-        @media(max-width:1600px){
+        @media (max-width: 1600px) {
           width: 18.4px;
         }
       }
@@ -360,10 +400,9 @@ nav {
     position: relative;
     margin-top: 92.9px;
     z-index: 3;
-    @media(max-width:1600px){
+    @media (max-width: 1600px) {
       margin-top: 82.9px;
     }
-    
   }
 }
 
@@ -375,6 +414,9 @@ nav {
     display: flex;
     justify-content: space-between;
     column-gap: 48px;
+    @media (max-width: 900px) {
+      column-gap: 24px;
+    }
     .circle-item {
       .circle {
         display: flex;
@@ -386,11 +428,23 @@ nav {
         align-items: c;
         border: 10px solid #000;
         border-radius: 50%;
+
+        @media (max-width: 1240px) {
+          width: 150px;
+          height: 150px;
+        }
+        @media (max-width: 900px) {
+          width: 130px;
+          height: 130px;
+        }
         .circle-text {
           font-size: 2em;
           font-weight: bold;
           max-width: 153px;
           margin: 0 auto;
+          @media (max-width: 900px) {
+            font-size: 1.5rem;
+          }
         }
       }
       .circle-title {

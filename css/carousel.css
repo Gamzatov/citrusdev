@@ -16,6 +16,11 @@
   -webkit-animation: animate 1s;
           animation: animate 1s;
 }
+@media (max-width: 850px) {
+  #carousel {
+    width: 650px;
+  }
+}
 #carousel .button-container {
   position: absolute;
   bottom: 30.5px;
@@ -49,8 +54,21 @@
   height: 100%;
   width: 100%;
 }
+@media (max-width: 650px) {
+  #carousel .slides .slide-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
 #carousel .slides .slide-wrapper .slide-text-wrapper {
   max-width: 600px;
+}
+@media (max-width: 850px) {
+  #carousel .slides .slide-wrapper .slide-text-wrapper {
+    max-width: 348px;
+  }
 }
 #carousel .slides .slide-wrapper .slide-text-wrapper .slide-title {
   font-size: 2.5em;
@@ -127,6 +145,11 @@
 .button-container {
   margin: 0px auto;
   text-align: center;
+}
+@media (max-width: 850px) {
+  .button-container {
+    display: none;
+  }
 }
 .button-container .hero-radio-button {
   border-radius: 50%;
